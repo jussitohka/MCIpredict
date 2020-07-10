@@ -1,4 +1,16 @@
 % CHANGED BY JUSSI TOHKA 22.3.2020 BY ALLOWING AUC COMPUTATION BY POOLING
+% in the Glmnet for Matlab package
+% Glmnet for Matlab (2013) Qian, J., Hastie, T., Friedman, J., Tibshirani, R. and Simon, N.
+% http://www.stanford.edu/~hastie/glmnet_matlab/
+%
+% Note that this function is intended to work only in the case of 'auc' and tuned for 10-fold CV. 
+%
+% This function is made available to document the study 
+% "Predicting the future development of mild cognitive impairment in the cognitively healthy elderly" by
+% Bryan A. Strange, Linda Zhang, Christopher J. Long, Alba Sierra-Marcos, Eva Alfayate, 
+% Jussi Tohka, Miguel Medina
+% It is not recommended to be used for any other purposes. 
+
 function result = cvlognet(object, lambda, x, y, weights, offset, foldid, ...
     type, grouped, keep,repeats)
 

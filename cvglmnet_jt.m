@@ -6,6 +6,18 @@ function CVerr = cvglmnet(x,y,family,options,type,nfolds,foldid,parallel,keep,gr
 %    see Bradley, Pattern recognition, vol. 30 no .7, pp. 1145 - 1159,1997     
 %   https://www.cse.ust.hk/nevinZhangGroup/readings/yi/Bradley_PR97.pdf
 
+% Original function from:
+% Glmnet for Matlab (2013) Qian, J., Hastie, T., Friedman, J., Tibshirani, R. and Simon, N.
+% http://www.stanford.edu/~hastie/glmnet_matlab/
+%
+% Note that this function is intended to work only in the case of 'auc' and tuned for 10-fold CV. 
+%
+% This function is made available to document the study 
+% "Predicting the future development of mild cognitive impairment in the cognitively healthy elderly" by
+% Bryan A. Strange, Linda Zhang, Christopher J. Long, Alba Sierra-Marcos, Eva Alfayate, 
+% Jussi Tohka, Miguel Medina
+% It is not recommended to be used for any other purposes. 
+
 %--------------------------------------------------------------------------
 % cvglmnet.m: cross-validation for glmnet
 %--------------------------------------------------------------------------
