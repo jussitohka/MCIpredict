@@ -167,6 +167,8 @@ for k = 1:nfeature_types
                [cvoptsen(k,iter,f),cvoptspec(k,iter,f),cvoptacc(k,iter,f)] = senspec(ytest(which),cvoptpredlabels,poslabel);
            end
        end
+       tmp = squeeze(cvbest_thr(k,:,:));
+       median_thr(k) = median(tmp(:));
    end
    
    [valrocX{k},valrocY{k},Tv,valauc{k}] = perfcurve(y,1 - valpred{k},0,'Weights',weights); % ,'nboot',5000,'xvals','all');
