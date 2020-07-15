@@ -64,13 +64,10 @@ end
 % !!!!!!!!!!!!!!!!!!
 % Now controls are in sheet 6 !!!!!!!!
 % !!!!!!!!!!!!!!!!!!
-% find age and gender matched control sample
-% idx = vallecas_matched_sample([age{2}; age{3}],[gender{2}; gender{3}],age{4},gender{4},0);
-% idx_subjid = subjid{4}(idx);
-% save(fullfile(datadir,'matched_controlidx_newconverters'),'idx','idx_subjid');
-% total 1264 ? variables, see below
+
+% total 1264 variables, see below
 % idx's refer to num
-% demographics 
+% demographics + APOE 
 varidx{1} = [1 2 4 5];
 % demographics without APOE
 varidx{2} = [1 2 5];
@@ -110,7 +107,7 @@ disp(varnames{2})
 % 2: Train controls
 % 3: Test converters
 % 4: Test controls
-% 5: v4+ converters at v1 (Not used)
+% 5: v4+ converters at v1 (Not used in this paper,  awaiting further longitudinal data to permit out-of-sample testing)
 
 % 1264 variables from Linda's email::
 % 1248 EC GM-density values
