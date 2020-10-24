@@ -12,3 +12,5 @@ The modified code is provided in this repository. The modified code is not desig
 
 prepare_vallecas_data_visitmatched_ds.m is the main data preparation script
 vallecas_glmnet_visitmatchedconverters_ds.m is the main data analysis and result collection script
+
+24 Oct 2020: A bug correction in knn_imputation file. This caused the method to use mean imputation instead of the knn imputation. 
